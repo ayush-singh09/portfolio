@@ -8,35 +8,35 @@ function Menu() {
   const { menu, setMenu } = useContext(MyContext);
   return (
     <div
-      className={`absolute bg-[#1c1c5f] h-dvh w-[80%] top-0 right-[${menu}] flex flex-col px-8 justify-center gap-3 transition-all duration-1000 ease-out`}
+      className={`absolute bg-[#1c1c5f] h-dvh w-[80%] top-0 ${menu} flex flex-col px-8 justify-center gap-3 transition-all duration-1000 ease-out`}
     >
       <button
         onClick={() => {
-          setMenu("-100%");
+          setMenu("right-[-100%]");
         }}
         className="absolute right-6 top-6 text-xl text-zinc-200"
       >
         <MdOutlineCancel />
       </button>
-      <Link onClick={() => setMenu("-100%")} className="py-1 rounded" to="/">
+      <Link onClick={() => setMenu('right-[-100%]')} className="py-1 rounded" to="/">
         Home
       </Link>
       <Link
-        onClick={() => setMenu("-100%")}
+        onClick={() => setMenu('right-[-100%]')}
         className="py-1 rounded"
         to="/about"
       >
         About
       </Link>
       <Link
-        onClick={() => setMenu("-100%")}
+        onClick={() => setMenu('right-[-100%]')}
         className="py-1 rounded"
         to="/contact"
       >
         Contact
       </Link>
       <Link
-        onClick={() => setMenu("-100%")}
+        onClick={() => setMenu('right-[-100%]')}
         className="py-1 rounded"
         to="/blog"
       >

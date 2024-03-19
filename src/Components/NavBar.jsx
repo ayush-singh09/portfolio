@@ -31,7 +31,7 @@ function NavBar() {
         </div>
       ) : (
         <div onClick={()=>{
-          setMenu('0');
+          setMenu('right-[0]');
         }} className="text-xl text-blue-400">
           <RiMenu5Line />
         </div>
