@@ -8,7 +8,7 @@ function Menu() {
   const { menu, setMenu } = useContext(MyContext);
   return (
     <div
-      className={`absolute bg-[#1c1c5f] h-dvh w-[80%] top-0 ${menu} flex flex-col px-8 justify-center gap-3 transition-all duration-1000 ease-out`}
+      className={`fixed bg-[#1c1c5f] h-dvh w-[80%] top-0 ${menu} flex flex-col px-8 justify-center gap-3 transition-all duration-1000 ease-out`}
     >
       <button
         onClick={() => {
