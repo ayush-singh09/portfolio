@@ -6,5 +6,20 @@ body{
     background-color: rgb(7, 7, 42);
     font-family: 'Gilroy';
     color: white;
-    overflow-x: hidden;
+}
+
+@media (max-width:700px) {
+  .blog-head{
+    flex-direction: column;
+    gap: 10vw;
+    align-items: start;
+    padding-top: 10px;
+  }
+  .blog-head h1{
+    font-size: 15vw;
+    line-height: normal;
+  }
+  .blog-head select{
+    padding: 2px ;
+  }
 }
