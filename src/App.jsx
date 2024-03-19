@@ -12,7 +12,7 @@ function App() {
   const { data, menu } = useContext(MyContext);
 
   return (
-    <>
+    <div className="relative h-screen w-full overflow-x-hidden">
       {/* Nav Bar */}
       <NavBar />
       <Menu/>
@@ -22,7 +22,7 @@ function App() {
         <Route path="/contact" element={<Contact />}></Route>
         <Route path="/blog" element={<Blog />}></Route>
       </Routes>
-    </>
+    </div>
   );
 }
 
