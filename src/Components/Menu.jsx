@@ -46,13 +46,13 @@ function Menu() {
       <div className=" flex gap-2 text-sm">
         <a
           className="bg-[#191948] border w-20 p-1 rounded flex items-center justify-center gap-2 cursor-pointer"
-          onClick={() => setMenu("-100%")}
+          onClick={() => setMenu("right-[-100%]")}
         >
           Resume
         </a>
         <a
           href="https://github.com/ayush-singh09"
-          onClick={() => setMenu("-100%")}
+          onClick={() => setMenu("right-[-100%]")}
           target="_blank"
           className="bg-black border w-[95px] p-1 rounded flex items-center justify-center gap-2"
         >
